@@ -13,16 +13,28 @@ export const Login = React.createClass({
       <Page>
         <Center>
           <VBox>
-            <VBox
-            style={{'width' : '250px'}}>
+            <VBox>
             <RaisedButton
               label='Login with Google'
-              style={{'margin' : '10px'}}/>
+              style={{
+                'margin' : '10px auto',
+                'width' : '250px',
+              }}/>
             <RaisedButton
               label='Login with Facebook'
-              style={{'margin' : '10px'}}/>
+              backgroundColor='#415dae'
+              style={{
+                'margin' : '10px auto',
+                'width' : '250px',
+                'margin' : '0 auto',
+              }}
+              facebook/>
             </VBox>
-            <Divider style={{'backgroundColor' : "#e0e0e0", "width" : '75vw'}}/>
+            <Divider style={{
+              'backgroundColor' : "#e0e0e0",
+              "width" : '75vw',
+              'marginTop' : '20px'
+            }}/>
             <VBox>
               <TextField
               floatingLabelText='Username'/>
