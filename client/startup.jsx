@@ -13,8 +13,8 @@ if (Meteor.isClient) {
 
     //Meteor.subscribe()
 
-    Tracker.autorun(function(){
+    // Tracker.autorun(function(){
       //subs ready
-    })
+    // })
   })
 }

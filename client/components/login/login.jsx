@@ -8,6 +8,9 @@ import Divider from 'material-ui/Divider';
 
 export const Login = React.createClass({
   displayName: 'Login',
+  _loginWithFacebook(){
+    App.Utils.login.loginWithFacebook()
+  },
   render(){
     return(
       <Page>
@@ -36,14 +39,17 @@ export const Login = React.createClass({
             <RaisedButton
               label='Login with Facebook'
               backgroundColor='#415dae'
-              labelStyle={{'color' : 'white'}}
+              labelStyle={{
+                'color' : 'white',
+                'fontWeight' : '300'
+              }}
               style={{
                 'margin' : '10px auto',
                 'width' : '250px',
                 'margin' : '0 auto',
                 'color' : 'white'
               }}
-              facebook/>
+              onClick={this._loginWithFacebook}/>
             </VBox>
             <Divider style={{
               'backgroundColor' : "#e0e0e0",
