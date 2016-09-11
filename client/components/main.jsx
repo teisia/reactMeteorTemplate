@@ -3,6 +3,7 @@ import { Center, Page, Box } from 'react-layout-components';
 import { ReactMeteorData } from 'meteor/react-meteor-data';
 import {Meteor} from 'meteor/meteor';
 import {render} from 'react-dom'
+import { Action, Dispatch, Register, State } from 'meteor/meteorflux:meteorflux';
 
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
@@ -23,7 +24,7 @@ export const Main = React.createClass({
   },
   getMeteorData(){
     return{
-      loggedIn: false
+      loggedIn: State.get(App.Constants.State.loggedIn)
     }
   },
   render(){
