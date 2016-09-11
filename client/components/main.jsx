@@ -9,7 +9,9 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import { theme } from '../constants/theme'
 
-import {Login}  from './login/login.jsx'
+import { Login }  from './login/login.jsx'
+
+import { Footer } from './footer.jsx'
 
 export const Main = React.createClass({
   displayName: "Main",
@@ -35,7 +37,7 @@ export const Main = React.createClass({
     return (
       <Page>
         <Box>
-          <h1>This is the page</h1>
+          <Footer />
         </Box>
       </Page>
     )
